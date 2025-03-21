@@ -1,0 +1,75 @@
+// Color Variables
+$primary_colour: #efeee5;
+$primary-hover-colour: #ca6342;
+$bg_colour: #faf9f6;
+$title_colour: #656256;
+$btn_colour: #ffffff;
+$border_colour: #c5c5c2;
+$submit_colour: #bc5c3a;
+
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: $bg_colour;
+}
+
+.content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: $primary_colour;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    text-align: center;
+
+    h1 {
+        color: $title_colour;
+    }
+
+    h3 {
+        color: $title_colour;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 10px;
+        border: 1px solid red;
+        border-collapse: collapse;
+        th,td {
+            padding: 10px;
+            border: 1px solid $border_colour;
+        }
+        
+    }
+    a {
+        display: block;
+        padding: 8px 16px;
+        margin: 10px 0px;
+        border-radius: 10px;
+        background-color: $btn_colour;
+        color: black;
+        text-decoration: none;
+        transition: background-color 0.2s ease;
+
+        &:hover{
+            background-color: $primary-hover-colour;
+        }
+    }
+
+    input {
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 15px;
+        border: 1px solid $border_colour;
+    }
+
+    #btn_add {
+        cursor: pointer;
+        background-color: $submit_colour;
+        color: rgb(252, 249, 249);
+        &:hover{
+            background-color: $primary-hover-colour;
+        }
+    }
+
+    
+}

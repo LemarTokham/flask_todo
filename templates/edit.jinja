@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}{% endblock %}
+<title>Tasks Smash</title>
+{% block body %}
+<div class="content"></div>
+        <h1>Edit task</h1>
+        <form action="/update/{{task.id}}" method="post">
+            <input 
+            type="text" 
+            name="content" 
+            id="content" 
+            value="{{task.content}}">
+            <input type="submit" value="Edit">
+        </form>
+</div>
+{% endblock %}
